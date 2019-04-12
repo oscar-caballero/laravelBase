@@ -1,0 +1,88 @@
+[
+{
+        "name": "uuid",
+        "dbType": "uuid",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+},
+{
+    "name": "name",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required|max:50",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},{
+    "name": "contact",
+    "dbType": "string",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "telephone",
+    "dbType": "string:nullable",
+    "htmlType": "tel",
+    "validations": "required_without:email",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+} ,
+{
+    "name": "email",
+    "dbType": "string",
+    "htmlType": "email",
+    "validations": "email",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "data",
+    "dbType": "text:nullable",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false,
+    "fillable": true,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+},
+{
+    "name": "score",
+    "dbType": "int,3:default,0",
+    "htmlType": "number",
+    "validations": "required|min:1|max:100",
+    "searchable": true,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+},
+{
+    "name": "comment",
+    "dbType": "text:nullable",
+    "htmlType": "text",
+    "validations": "required",
+    "searchable": false,
+    "fillable": true,
+    "primary": false,
+    "inForm": true,
+    "inIndex": true
+} ]
